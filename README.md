@@ -1,6 +1,8 @@
 ##Install python libraries
 Install libraries from __*requirements.txt*__
->pip install 
+>pip install
+> 
+>*install __psycopg2-binary__ labrary
 
 ##Restore DB
 Postgres13 database from __*backup/test.dump*__ (text) through command 
