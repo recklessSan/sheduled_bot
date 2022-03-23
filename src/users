@@ -1,0 +1,39 @@
+1, user1, 12312331223
+2, user2, 213212123334
+3, user1, 87162374324
+
+
+products
+id, name, price
+1, apple, 123
+2, milk, 1423
+
+
+offers
+user_id, product_id
+1, 1
+1, 2
+2, 1
+
+user_id, product_id,
+1, 1, 1, user1, 12312331223, 1, apple, 123
+1, 1, 1, user1, 12312331223, 2, milk, 1423
+2, 1, 2, user2, 213212123334, 1, apple, 123
+
+
+
+for str of mass:
+    arr = str.split(',').trim()
+    user_id = arr[0]
+    user
+
+result
+1 (1423 + 123)
+2 123
+
+select
+users.id, sum(products.price)
+from offers
+join users on users.id = offers.user_id
+join products on products.id = offers.product_id
+group by users.id

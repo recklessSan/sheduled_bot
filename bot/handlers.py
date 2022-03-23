@@ -18,5 +18,5 @@ class Handlers:
         chat_id = update.effective_chat.id
         print(chat_id)
         message = update.effective_message.text
-        context.bot.send_messgae(chat_id=chat_id, message=user + '\n' + message)
+        context.bot.send_message(chat_id, user + '\n' + message)
 
